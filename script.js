@@ -51,9 +51,6 @@ const displayMenu = (categories) => {
     });
 }
 
-
-
-
 // Cards
 const loadTreeCard = async (id) => {
     spinner.classList.remove("hidden");
@@ -135,7 +132,6 @@ function updateCartTotal() {
     });
     document.getElementById("cart-total-price").innerText = total.toFixed(2);
 }
-
 
 toggleMenu();
 allCategory();
