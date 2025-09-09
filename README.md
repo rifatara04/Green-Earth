@@ -34,9 +34,9 @@ Destructuring assignment is a shorthand in ES6 that allows unpacking values from
 
 ans:
 
-Template literals: Template literals in ES6 are a new way to define strings. They are enclosed by backticks (``) instead of single or double quotes. It joins two or more strings together without using the + operator.
+Template literals: Template literals in ES6 are a new way to define strings. They are enclosed by backticks (``) instead of single or double quotes. It joins two or more strings together without using + operator.
 
 It allows string interpolation, inserting variables or expressions directly inside ${} also writing strings in multiple lines without using \n.
 
-String concatenation: On the other side, string concatenation means joining two or more strings together using the + operator. When writing multiple lines, it needs \n or the + operator. It becomes messy with long strings.
+String concatenation: On the other side, string concatenation means joining two or more strings together using + operator. When writing multiple lines, it needs \n or the + operator. It becomes messy with long strings.
 
