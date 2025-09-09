@@ -102,14 +102,14 @@ function addToCart(name, price) {
     const cart = document.getElementById("add-to-cart-main-section");
 
     const cartItem = document.createElement("div");
-    alert(`"${name}" has been added to your cart`);
+    alert(`${name} has been added to your cart`);
     cartItem.className = "cart-item flex justify-between items-center rounded-lg p-2 bg-green-50 mt-2";
     cartItem.innerHTML = `
-      <div>
+      <div class="text-[#1F2937]">
         <h1 class="font-bold">${name}</h1>
         <p>৳<span class="cart-item-price">${price}x1</span></p>
       </div>
-      <button class="remove-btn">❌</button>`;
+      <button class="remove-btn font-semibold text-[#1F2937] ">X</button>`;
 
     cart.appendChild(cartItem);
     updateCartTotal();

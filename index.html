@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
+   <meta charset="UTF-8">
     <meta name="description" content="Green Earth">
     <meta name="keywords" content="HTML, CSS, Tailwind">
     <meta name="author" content="Rifat-Ara Firoz">
@@ -12,6 +12,7 @@
     <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="style.css">
+
 
 
     <!-- font family -->
@@ -24,7 +25,6 @@
     </head>
 
     <body class="bg-[#f0fdf4] open-sans-inter">
-
 
         <nav class="bg-[#15803D] py-2 p-3 ">
             <div class="navbar max-w-[1650px] mx-auto">
@@ -46,15 +46,16 @@
                         </ul>
                     </div>
                     <div class="flex justify-center items-center gap-2">
+                        <!-- <img class="size-10 " src="./images/plant.png" alt=""> -->
                         <h1 class="md:text-2xl text-xl font-bold text-white">Green Earth</h1>
                     </div>
         
                 </div>
                 <div class="navbar-center hidden lg:flex">
                     <ul class="menu menu-horizontal gap-3 px-1 text-base font-normal text-white">
-                        <li class="hover:border-b-1 hover:border-white">About</li>
-                        <li class="hover:border-b-1 hover:border-white">Gallery</li>
-                        <li class="hover:border-b-1 hover:border-white">Plant a Tree</li>
+                        <li class="hover:border-b-1 hover:border-white"><a href="#">About</a></li>
+                        <li class="hover:border-b-1 hover:border-white"><a href="#">Gallery</a></li>
+                        <li class="hover:border-b-1 hover:border-white"><a href="#">Plant a Tree</a></li>
                     </ul>
                 </div>
                 <div class="navbar-end">
@@ -64,8 +65,7 @@
             </div>
             </div>
         </nav>
-        
-        
+              
         <!-- Banner -->
         <div class="banner relative bg-[#CFF0DC] h-[385px] flex justify-center items-center px-4">
             <div class="absolute bottom-0 left-0 w-32 sm:w-32 xl:w-[350px] 2xl:w-[550px]">
@@ -78,22 +78,22 @@
                     Join our mission to plant 1 million trees and make the Earth greener for future generations.
                 </p>
                 <a
-                    class="btn bg-[#FACC15] border-none shadow-none rounded-full text-xs sm:text-sm md:text-base px-6 sm:px-8 py-2">
-                    Plant a Tree
+                    class="btn bg-[#FACC15] border-none shadow-none rounded-full text-xs sm:text-sm md:text-base px-6 sm:px-8 py-2 text-[#15803D]">
+                    Get Involved
                 </a>
             </div>
         
             <div class="absolute bottom-0 right-0 w-32 sm:w-32  xl:w-[350px] 2xl:w-[550px]">
-                <img src="./assets/hero-leaf2.png" alt="">
+                <img src="./assets/image.png" alt="">
             </div>
         </div>
         
         <!-- Main -->
+         <h1 class="text-center mt-10 text-[#1F2937] font-bold text-2xl">Choose Your Trees</h1>
         <main class="container mx-auto mt-10 flex flex-col lg:flex-row gap-6 p-4">
         
-            <!-- Sidebar -->
-          
-            <aside class="w-full lg:w-1/6 bg-white p-4 rounded-xl shadow-md">
+
+            <aside class="w-full lg:w-1/6">
                 <h2 class="font-bold text-lg mb-4">Categories</h2>
                 <ul id="asaid-cointainer" class="flex  flex-col gap-2"></ul>
             </aside>
@@ -104,7 +104,7 @@
                 <div id="spinner" class="hidden absolute inset-0 flex justify-center items-center bg-white/50 z-20">
                     <div class="spinner-circle"></div>
                 </div>
-                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6" id="card-cointainer"></div>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-3 gap-6" id="card-cointainer"></div>
             </section>
         
             <!-- Cart -->
@@ -121,15 +121,15 @@
 
 
         <main>
-            <h1 class="text-center mt-[100px] text-3xl font-bold">About the Campaing</h1>
+            <h1 class="text-center mt-[100px] text-3xl font-bold text-[#1F2937]">About the Campaing</h1>
             <!-- about the camping section -->
-            <section class="w-full lg:w-6/12 mx-auto mt-10 flex flex-col lg:flex-row justify-between p-4">
+            <section class="w-full lg:w-8/12 xl:w-6/12 mx-auto mt-10 flex flex-col lg:flex-row justify-between p-4">
         
         
-                <div class="w-full lg:w-6/12">
+                <div class="w-full xl:w-6/12 md:flex md:justify-center md:items-center">
                     <img src="assets/about.png" class="rounded-md shadow-md">
                 </div>
-                <div class="w-full lg:w-6/12 flex flex-col justify-center p-6 gap-4 text-[#1F2937]">
+                <div class="w-full xl:w-6/12 flex flex-col justify-center p-6 gap-4 text-[#1F2937]">
                     <p>Green Earth is a global tree plantation initiative dedicated to fighting climate change. Since our start,
                         we’ve planted
                         over 500,000 trees worldwide. By joining our campaign, you help restore forests, create habitats for
@@ -145,7 +145,7 @@
         
             <!-- 3 card section -->
         
-            <section class="bg-[#CFF0DC] w-full h-[800px] lg:h-[440px] mt-20 flex flex-col gap-10">
+            <section class="bg-[#CFF0DC] w-full h-[800px] lg:h-[440px] mt-20 flex flex-col gap-0 lg:gap-10">
                 <h1 class="text-center mt-[100px] text-3xl font-bold">Our Impact</h1>
                 <div class="w-10/12 mx-auto flex flex-col lg:flex-row justify-between items-center gap-10">
                     <div class="w-[100%] lg:w-[515px] h-[155px] bg-[#ffffff] rounded-2xl
@@ -175,14 +175,14 @@
             <form
                 class="bg-[#15803D] w-[320px] lg:w-[650px] h-[310px] rounded-2xl flex flex-col justify-center items-center gap-6 p-6">
                 <input type="text" placeholder="Your Name"
-                    class="border border-white w-[310px] lg:w-[570px] h-[50px] rounded-lg  bg-[#ffffff] pl-4">
+                    class="border border-white w-[300px] lg:w-[570px] h-[50px] rounded-lg  bg-[#ffffff] pl-4">
                 <input type="text" placeholder="Your Email Address"
-                    class="border border-white w-[310px] lg:w-[570px] h-[50px] rounded-lg  bg-[#ffffff] pl-4">
+                    class="border border-white w-[300px] lg:w-[570px] h-[50px] rounded-lg  bg-[#ffffff] pl-4">
         
                 <fieldset class="fieldset">
         
                     <select
-                        class="select select-bordered w-[310px] lg:w-[570px] h-[50px] rounded-lg  bg-[#ffffff] border border-white">
+                        class="select select-bordered w-[300px] lg:w-[570px] h-[50px] rounded-lg  bg-[#ffffff] border border-white pl-4">
                         <option disabled selected>Number Of Trees</option>
                         <option>$100-$500</option>
                         <option>$501-$700</option>
@@ -191,7 +191,7 @@
         
                 </fieldset>
         
-                <button class="bg-[#FACC15] w-[310px] lg:w-[570px] h-[50px] rounded-lg  text-green-500  font-semibold">Donate
+                <button class="bg-[#FACC15] w-[300px] lg:w-[570px] h-[50px] rounded-lg  text-green-500  font-semibold">Donate
                     Now</button>
         
         
@@ -216,4 +216,6 @@
 
 
     <script src="script.js"></script>
+
+
     </html>
